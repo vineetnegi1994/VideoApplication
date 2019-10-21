@@ -51,12 +51,17 @@ import com.example.videoapplication.photoediting.PhotoEditorView;
 import com.example.videoapplication.photoediting.TextStyleBuilder;
 import com.example.videoapplication.photoediting.ViewType;
 import com.example.videoapplication.utils.SpacesItemDecoration;
+import com.github.hiteshsondhi88.libffmpeg.ExecuteBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
 
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import nl.bravobit.ffmpeg.FFprobe;
+import timber.log.Timber;
 
 import static android.view.View.GONE;
 
@@ -131,6 +136,23 @@ public class PhotoEditingActivity extends AppCompatActivity implements OnPhotoEd
         color_seek_bar_bg=findViewById(R.id.color_seek_bar_bg);
         //////////////////////////////////////////Music//////////////////////
         clickToPlay = findViewById(R.id.clickForPlay);
+
+        /*if (FFmpeg.getInstance(this).isSupported()) {
+            // ffmpeg is supported
+            versionFFmpeg();
+            //ffmpegTestTaskQuit();
+        } else {
+            // ffmpeg is not supported
+            Timber.e("ffmpeg not supported!");
+        }
+
+        if (FFprobe.getInstance(this).isSupported()) {
+            // ffprobe is supported
+            versionFFprobe();
+        } else {
+            // ffprobe is not supported
+            Timber.e("ffprobe not supported!");
+        }*/
 
         ////////////////////////////////////////////////////////////////////
         color_seek_bar.setOnColorChangeListener(new ColorSeekBar.OnColorChangeListener() {
@@ -855,6 +877,82 @@ public class PhotoEditingActivity extends AppCompatActivity implements OnPhotoEd
         cursor.moveToFirst();
         return cursor.getString(column_index);
     }
+
+    /*private void versionFFmpeg() {
+        FFmpeg.getInstance(this).execute(new String[]{"-version"}, new ExecuteBinaryResponseHandler() {
+            @Override
+            public void onSuccess(String message) {
+                Timber.d(message);
+            }
+
+            @Override
+            public void onProgress(String message) {
+                Timber.d(message);
+            }
+        });
+
+    }
+
+    private void versionFFprobe() {
+        Timber.d("version ffprobe");
+        FFprobe.getInstance(this).execute(new String[]{"-version"}, new ExecuteBinaryResponseHandler() {
+            @Override
+            public void onSuccess(String message) {
+                Timber.d(message);
+            }
+
+            @Override
+            public void onProgress(String message) {
+                Timber.d(message);
+            }
+        });
+    }
+
+    private void ffmpegTestTaskQuit() {
+        String[] command = {"-i", "input.mp4", "output.mov"};
+
+        final FFtask task = FFmpeg.getInstance(this).execute(command, new ExecuteBinaryResponseHandler() {
+            @Override
+            public void onStart() {
+                Timber.d( "on start");
+            }
+
+            @Override
+            public void onFinish() {
+                Timber.d("on finish");
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Timber.d("RESTART RENDERING");
+                        ffmpegTestTaskQuit();
+                    }
+                }, 5000);
+            }
+
+            @Override
+            public void onSuccess(String message) {
+                Timber.d(message);
+            }
+
+            @Override
+            public void onProgress(String message) {
+                Timber.d(message);
+            }
+
+            @Override
+            public void onFailure(String message) {
+                Timber.d(message);
+            }
+        });
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Timber.d( "STOPPING THE RENDERING!");
+                task.sendQuitSignal();
+            }
+        }, 8000);
+    }*/
 
     ////////////////////////////////////////////////////////////////////
 }
