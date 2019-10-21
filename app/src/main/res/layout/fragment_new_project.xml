@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NewProjectFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/projectNamely"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white">
+
+
+            <EditText
+                android:id="@+id/projectName"
+                android:textColor="@android:color/black"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Enter Title"
+                android:textColorHint="@color/grey_circle"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_below="@+id/projectNamely"
+            android:id="@+id/startproj"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_gradient"
+            >
+            <TextView
+                android:text="Start New Project"
+                android:textSize="@dimen/_18sdp"
+
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

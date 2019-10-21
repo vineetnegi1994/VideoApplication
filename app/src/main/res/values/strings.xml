@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">VideoApplication</string>
+    <string name="SKIP">Skip</string>
+    <string name="CIRCLE_LABEL">Let\'s do a quick walkthrough</string>
+    <string name="CIRCLE_LABEL2">START</string>
+    <string name="LIBRARY">Library</string>
+    <string name="PHOTO">Photos</string>
+    <string name="NEW_PROJECT">New Project</string>
+    <string name="PRESENT_VIDEO">Present Videos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="OPTIONS">OPTIONS</string>
+    <string name="DURATION">DURATION</string>
+    <string name="TEXT">TEXT</string>
+    <string name="DELETE">DELETE</string>
+
+
+    <string-array name="animation_list">
+        <item>Attention Seekers</item>
+        <item>Bouncing Entrance</item>
+        <item>Bouncing Exit</item>
+        <item>Fading Entrance</item>
+        <item>Fading Exit</item>
+        <item>Flipper</item>
+        <item>Rotating Entrance</item>
+        <item>Rotating Exit</item>
+        <item>Rotate In and Out</item>
+        <item>Sliding Entrance</item>
+        <item>Sliding Exit</item>
+        <item>Slide In and Out</item>
+        <item>Zoom Entrance</item>
+        <item>Zoom Exit</item>
+    </string-array>
+    <string-array name="main_effects">
+        <item>Bounce|Bounce</item>
+        <item>Flash|Flash</item>
+        <item>RubberBand|Rubber Band</item>
+        <item>Shake|Shake</item>
+        <item>Swing|Swing</item>
+        <item>Tada|Tada</item>
+        <item>Wobble|Wobble</item>
+        <item>Wave|Jelly</item>
+        <item>Pulse|Heart Beat</item>
+    </string-array>
+    <string-array name="Bounce_entrance_effects">
+        <item>BounceIn|Fade in to centre Bounce</item>
+        <item>BounceInDown|Down to centre Bounce</item>
+        <item>BounceInUp|Up to centre Bounce</item>
+        <item>BounceInLeft|Left to centre Bounce</item>
+        <item>BounceInRight|Right to centre Bounce</item>
+        <item>|Bounce Fade out centre</item>
+        <item>|Bounce out Down</item>
+        <item>|Bounce out Up</item>
+        <item>|Bounce out Right</item>
+    </string-array>
+    <string-array name="Bounce_out_effects">
+        <item>|Bounce Fade out centre</item>
+        <item>|Bounce out Down</item>
+        <item>|Bounce out Up</item>
+        <item>|Bounce out Right</item>
+    </string-array>
+
+    <string-array name="Fade_out_effects">
+        <item>FadeOut|Fade out - Down (in frame)</item>
+        <item>FadeOutDown|Fade out - Down (out of frame)</item>
+        <item>|Fade out - Left (in frame)</item>
+        <item>FadeOutLeft|Fade out - Left (out of frame)</item>
+        <item>|Fade out - right (in frame)</item>
+        <item>FadeOutRight|Fade out - right (out of frame)</item>
+        <item>FadeOutUp|Fade out - Up (in frame)</item>
+        <item>|Fade out - Up (out of frame)</item>
+
+    </string-array>
+    <string-array name="Fade_in_effects">
+        <item>|Fade in - centre </item>
+        <item>FadeIn|Fade in - Down (in  frame)</item>
+        <item>FadeInDown|Fade in - Down (out of  frame)</item>
+        <item>FadeInLeft|Fade in - Left (in frame)</item>
+        <item>|Fade in - Left (out of frame)</item>
+        <item>FadeInRight|Fade in - right (in frame)</item>
+        <item>|Fade in - right (out of frame)</item>
+        <item>|Fade in - Up (in frame)</item>
+        <item>FadeInUp|Fade in - up (out of frame)</item>
+
+    </string-array>
+    <string-array name="Flipper_effects">
+        <item>|Fip X </item>
+        <item>|Flip Y</item>
+        <item>FlipInX|Flip in X</item>
+        <item>FlipInY|Flip in y</item>
+        <item>FlipOutX|Flip out X</item>
+        <item>FlipOutY|Flip out y</item>
+
+    </string-array>
+    <string-array name="Rotating_In">
+        <item>RotateIn|Rotate in(centre -small to big fade in) </item>
+        <item>|Rotate in left (stop centre)</item>
+        <item>|Rotate in - right (stop centre)</item>
+        <item>|Rotate in (left to centre fade in)</item>
+        <item>|Rotate in(right to centre - fade in)</item>
+    </string-array>
+    <string-array name="Rotating_Out">
+        <item>RotateOut|Rotate out(centre -big to big fade in) </item>
+        <item>|Rotate out  (centre to left)</item>
+        <item>|Rotate out (centre to right)</item>
+        <item>|Rotate out (centre to right fade out)</item>
+        <item>|Rotate outcentre to left - fade out)</item>
+    </string-array>
+
+    <string-array name="Rotate">
+        <item>RotateInDownLeft|Rotate from left </item>
+        <item>RotateInDownRight|Rotate in from right</item>
+        <item>RotateInUpLeft|Rotate in from top</item>
+        <item>RotateInUpRight|Rotate in from bottom</item>
+    </string-array>
+    <string-array name="Sliding_In">
+        <item>SlideInUp|Slide in up </item>
+        <item>SlideInDown|Slide in down</item>
+        <item>SlideInLeft|Slide in left</item>
+        <item>SlideInRight|Slide in right</item>
+    </string-array>
+    <string-array name="Sliding_Out">
+        <item>SlideOutUp|Slide out up </item>
+        <item>SlideOutDown|Slide out down</item>
+        <item>SlideOutLeft|Slide out left</item>
+        <item>SlideOutRight|Slide out right</item>
+    </string-array>
+    <string-array name="Sliding_In_Out">
+        <item>SlideInLeft|Slide from left </item>
+        <item>SlideInRight|Slide from right</item>
+        <item>SlideInDown|Slide from top</item>
+        <item>SlideOutUp|Slide from bottom</item>
+    </string-array>
+    <string-array name="Zoom_in">
+        <item>ZoomIn|Zoom in centre </item>
+        <item>ZoomInDown|Zoom in down</item>
+        <item>ZoomInUp|Zoom in Up</item>
+        <item>ZoomInLeft|Zoom in Left</item>
+        <item>ZoomInRight|Zoom in Right</item>
+    </string-array>
+    <string-array name="Zoom_Out">
+        <item>ZoomOut|Zoom out centre </item>
+        <item>ZoomOutDown|Zoom out down</item>
+        <item>ZoomOutUp|Zoom out Up</item>
+        <item>ZoomOutLeft|Zoom out Left</item>
+        <item>ZoomOutRight|Zoom out Right</item>
+    </string-array>
+    <string name="title_activity_home_nav">HomeNavActivity</string>
+
+    <string name="video_tutorial">Video tutorials</string>
+    <string name="rate_this_app">Rate this App</string>
+    <string name="contact">Contact</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instagram">Instagram</string>
+    <string name="instafram_stories">Instagram Stories</string>
+    <string name="email">Email</string>
+    <string name="message">Meassage</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="app_lib">App Library</string>
+    <string name="photo_lib">Photo Library</string>
+    <string name="SHARE">Share</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="HOME">Home</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="REPLACE">REPLACE</string>
+    <string name="Font">Font</string>
+    <string name="Color">Color</string>
+    <string name="done">DONE</string>
+    <string name="Camera_Roll">Camera Roll</string>
+    <string name="CHOOSE_FORMAT">Choose Format</string>
+    <string name="SELECT_PHOTO">Select Photo</string>
+    <string name="ANIMATION">Animation</string>
+    <string name="BG_COLOR">Background Color</string>
+</resources>
